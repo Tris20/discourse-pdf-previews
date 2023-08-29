@@ -1,7 +1,7 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
 import { iconHTML } from "discourse-common/lib/icon-library";
 
-const PREVIEW_HEIGHT = 780;
+const PREVIEW_HEIGHT = 880;
 
 
 export default {
