@@ -1,7 +1,8 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
 import { iconHTML } from "discourse-common/lib/icon-library";
 
-const PREVIEW_HEIGHT = 500;
+const PREVIEW_HEIGHT = 780;
+const PREVIEW_WIDTH = 780;
 
 export default {
   name: "pdf-previews",
@@ -27,6 +28,7 @@ export default {
           iframe.src = "";
           iframe.type = "application/pdf";
           iframe.height = PREVIEW_HEIGHT;
+          iframe.width = PREVIEW_WIDTH;
           iframe.loading = "lazy";
           iframe.classList.add("pdf-preview");
 
